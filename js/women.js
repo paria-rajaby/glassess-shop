@@ -344,7 +344,7 @@ const showUserBasket = () => {
         `
       <div class="middle-section-basket_product">
                   <a href="../pages/product.html?id=${product.id}">
-                      <img src="${product.image}" alt="glasses">
+                      <img src="../${product.image}" alt="glasses">
                   </a>
                   <div class="middle-section-basket_info">
                       <a href="../pages/product.html?id=${product.id}">${

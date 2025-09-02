@@ -5,15 +5,15 @@
 
 @font-face {
     font-family: "vazir Bold";
-    src: url("fonts/Vazirmatn-Bold.woff2");
+    src: url("../fonts/Vazirmatn-Bold.woff2");
 }
 @font-face {
     font-family: "vazir light";
-    src: url("fonts/Vazirmatn-Light.woff2");
+    src: url("../fonts/Vazirmatn-Light.woff2");
 }
 @font-face {
     font-family: "vazir Regular";
-    src: url("fonts/Vazirmatn-Regular.woff2");
+    src: url("../fonts/Vazirmatn-Regular.woff2");
 }
 body{
     font-family: "vazir Regular";
