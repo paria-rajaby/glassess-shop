@@ -22,7 +22,7 @@ const answerTwo = document.querySelector(".answer_two");
 let isShown = false;
 
 const groupingProducts = async () => {
-  const response = await fetch("/data/products.json");
+  const response = await fetch("data/products.json");
   const data = await response.json();
   const latestProducts = data.filter((item) => {
     return item.isNew === true;
@@ -34,7 +34,7 @@ const groupingProducts = async () => {
       "beforeend",
       `
         <div class="cover-new"> 
-          <a href="/pages/product.html?id=${product.id}">
+          <a href="pages/product.html?id=${product.id}">
                 <img src="${product.image}" alt="glasses">
               <div class="new-prouducts-info">
                     <div class="products-info-wrapper">
@@ -153,7 +153,7 @@ const showUserBasket = () => {
                       <img src="${product.image}" alt="">
                   </a>
                   <div class="middle-section-basket_info">
-                      <a href="/pages/product.html?id=${product.id}">${
+                      <a href="pages/product.html?id=${product.id}">${
           product.title
         }</a>
                       <span>${product.price.toLocaleString()} تومان</span>
