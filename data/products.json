@@ -4,7 +4,7 @@
         "title" : "عینک زنانه برند میو میو",
         "price" : 1600000,
         "category":"fem",
-        "image" : "/images/women/fem1.jpg",
+        "image" : "images/women/fem1.jpg",
         "isNew" : true,
         "saled" : 100,
         "count" :1,

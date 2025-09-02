@@ -153,7 +153,7 @@ const showUserBasket = () => {
                       <img src="${product.image}" alt="">
                   </a>
                   <div class="middle-section-basket_info">
-                      <a href="pages/product.html?id=${product.id}">${
+                      <a href="/pages/product.html?id=${product.id}">${
           product.title
         }</a>
                       <span>${product.price.toLocaleString()} تومان</span>
