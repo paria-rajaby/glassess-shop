@@ -20,7 +20,7 @@ const showProducts = () => {
       `
             <div class="product">
                     <div class="image">
-                        <img src="${product.image}" alt="">
+                        <img src="../${product.image}" alt="glasses">
                         <span>${product.title}</span>
                     </div>
                     <div class="price">
@@ -105,11 +105,11 @@ const showUserBasket = () => {
         "beforeend",
         `
       <div class="middle-section-basket_product">
-                  <a href="/pages/product.html?id=${product.id}">
-                      <img src="${product.image}" alt="">
+                  <a href="../pages/product.html?id=${product.id}">
+                      <img src="../${product.image}" alt="glasses">
                   </a>
                   <div class="middle-section-basket_info">
-                      <a href="/pages/product.html?id=${product.id}">${
+                      <a href="../pages/product.html?id=${product.id}">${
           product.title
         }</a>
                       <span>${product.price.toLocaleString()} تومان</span>
