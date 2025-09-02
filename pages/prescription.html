@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/pages.css">
+</head>
+<svg style="display: none;">
+    <symbol id="menue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </symbol>
+    <symbol id="shop-basket" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+    </symbol>
+    <symbol id="search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+    </symbol>
+    <symbol id="filter"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z" />
+    </symbol>
+    <symbol id="plus"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+    </symbol>
+    <symbol id="arrow"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5 7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5" />
+    </symbol>
+    <symbol id="trash" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+    </symbol>
+    
+</svg>
+<body>
+    <header class="header">
+        <div class="head-right">
+            <svg>
+                <use href="#menue"></use>
+            </svg>
+        </div>
+        <div class="head-middle">
+            <p>V shop</p>
+        </div>
+        <div class="head-left">
+            <span>2</span>
+            <svg>
+                <use href="#shop-basket"></use>
+            </svg>
+        </div>
+    </header>
+    <div class="basket hidden">
+        <div class="top-section-basket">
+            <span>سبد خرید من</span>
+            <span id="counter">4 محصول</span>
+        </div>
+        <div class="middle-section-basket">
+            <div class="middle-section-basket_product">
+                <a href="">
+                    <img src="/images/men/a52d25b3247a534c5df2b4af4f50e39b.jpg" alt="">
+                </a>
+                <div class="middle-section-basket_info">
+                    <a href="">عینک مردانه مدل گوچی</a>
+                    <span>16000 تومان</span>
+                </div>
+                <button class="middle-section-basket_btn">
+                    <svg>
+                        <use href="#trash"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="middle-section-basket_product">
+                <a href="">
+                    <img src="/images/men/a52d25b3247a534c5df2b4af4f50e39b.jpg" alt="">
+                </a>
+                <div class="middle-section-basket_info">
+                    <a href="">عینک مردانه مدل گوچی</a>
+                    <span>16000 تومان</span>
+                </div>
+                <button class="middle-section-basket_btn">
+                    <svg>
+                        <use href="#trash"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="middle-section-basket_product">
+                <a href="">
+                    <img src="/images/men/a52d25b3247a534c5df2b4af4f50e39b.jpg" alt="">
+                </a>
+                <div class="middle-section-basket_info">
+                    <a href="">عینک مردانه مدل گوچی</a>
+                    <span>16000 تومان</span>
+                </div>
+                <button class="middle-section-basket_btn">
+                    <svg>
+                        <use href="#trash"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="bottom-section-basket">
+            <div class="bottom-section-basket-info">
+                <span>مبلغ قابل پرداخت</span>
+                <span class="price"></span>
+            </div>
+            <div class="bottom-section-basket_btn">
+                <a href="/pages/finallpage.html">مشاهده سبد خرید</a>
+            </div>
+        </div>
+    </div>
+    <div class="right-menu hidden">
+        <div class="right-menu-svg">
+            <svg>
+                <use href="#plus"></use>
+            </svg>
+        </div>
+        <div class="right-menu-wrapper">
+            <span>دسته بندی ها</span>
+        <div class="right-menu-list">
+            <ul>
+                <li><a href="/pages/women.html">عینک زنانه</a></li>
+                <li><a href="/pages/men.html">عینک مردانه</a></li>
+                <li><a href="/pages/prescription.html">عینک طبی</a></li>
+                <li><a href="/pages/accessories.html">اکسسوری عینک</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <main class="container">
+        <div class="product-title-wrapper">
+            <h1 class="product-title">عینک های طبی</h1>
+            <span>20 عدد</span>
+        </div>
+        <section class="products-filtering">
+            <div class="filters">
+                <form action="">
+                    <div class="search-box">                  
+                        <input type="text" autocomplete="off" placeholder="جستجو بین عینک ها">
+                        <button type="button">
+                            <svg>
+                                <use href="#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter-btns">
+                        <button type="button" id="filter-btns_filtering">
+                            <svg>
+                                <use href="#filter"></use>
+                            </svg>
+                            <span>فیلتر</span>
+                        </button>
+                        <button type="button" id="filter-btns_all__products">
+                            <svg>
+                                <use href="#arrow"></use>
+                            </svg>
+                            <span>همه محصولات</span>
+                        </button>
+                    </div>
+                    <div class="filter-toggle expensive">
+                        <label class="toggle-btn">
+                            <span>گران ترین ها</span>
+                            <input type="checkbox" class="toggle-btn_input">
+                            <span  class="toggle-btn_marker"></span>
+                        </label>
+                    </div>
+                    <div class="filter-toggle cheap">
+                        <label class="toggle-btn">
+                            <span>ارزان ترین ها</span>
+                            <input type="checkbox" class="toggle-btn_input">
+                            <span  class="toggle-btn_marker"></span>
+                        </label>
+                    </div>
+                    <div class="filter-toggle most-saled">
+                        <label class="toggle-btn">
+                            <span>پر فروشترین ها</span>
+                            <input type="checkbox" class="toggle-btn_input">
+                            <span  class="toggle-btn_marker"></span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="products">
+                <div class="products-bar">
+                    <div class="products-bar_right">
+                        <span>مرتب سازی بر اساس:</span>
+                    </div>
+                    <div class="products-bar_left">
+                        <span data-filter="all" class="border-white">همه عینک ها</span>
+                        <span data-filter="expensive">گرانترین ها</span>
+                        <span data-filter="cheap">ارزانترین ها</span>
+                        <span data-filter="moastsaled">پر فروش ترین ها</span>
+                    </div>
+                </div>
+                <div class="products-list">
+                    <div class="product">
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="/images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="./images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="./images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="./images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="./images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="./images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="./images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cover-new"> 
+                            <a href="https://sabzlearn.ir/course-cat/front-end/?s=&only_free=yes&sort=popular">
+                                <img src="./images/women/b73e06c140e1211244553a0d63cdcff9.jpg" alt="">
+                            <div class="new-prouducts-info">
+                                <div class="products-info-wrapper">
+                                    <span>خیار</span>
+                                    <span>250000تومان</span>
+                                </div>
+                                <div>
+                                   <button class="new-prouducts-info-svg">
+                                    <svg>
+                                        <use href="#shop-basket"></use>
+                                    </svg>
+                                   </button>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- page nation -->
+                <div id="pagination"></div>
+        </section>
+        <div class="mobile-filter">
+            <div class="filter-head">
+                <span>فیلتر ها</span>
+                <div>
+                    <svg>
+                        <use href="#plus"></use>
+                    </svg>
+                </div>
+            </div>
+            <form class="filter-body">
+                
+                <div class="filter-toggle_mobile expensive" >
+                    <label class="toggle-btn_mobile">
+                        <span>گران ترین ها</span>
+                        <input data-set ="expensive" type="checkbox" class="toggle-btn_input_mobile">
+                        <span  class="toggle-btn_marker_mobile"></span>
+                    </label>
+                </div>
+                <div class="filter-toggle_mobile cheap" >
+                    <label class="toggle-btn_mobile">
+                        <span>ارزان ترین ها</span>
+                        <input data-set ="cheap" type="checkbox" class="toggle-btn_input_mobile">
+                        <span  class="toggle-btn_marker_mobile"></span>
+                    </label>
+                </div>
+                <div class="filter-toggle_mobile most-saled" >
+                    <label class="toggle-btn_mobile">
+                        <span>پر فروشترین ها</span>
+                        <input data-set ="moastsaled" type="checkbox" class="toggle-btn_input_mobile">
+                        <span  class="toggle-btn_marker_mobile"></span>
+                    </label>
+                </div>
+            </form>
+            <div class="filter-footer">
+                <button>اعمال فیلتر</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-right">
+                    <span>وی شاپ</span>
+                    <p>ما باور داریم هر نگاه، داستانی دارد؛ با عینک‌های آفتابی و طبی ما، هم از چشمانتان مراقبت کنید و هم دنیای اطرافتان را شفاف‌تر، زیباتر و با اعتماد به‌نفس بیشتری ببینید.</p>
+                </div>
+                <div class="footer-left">
+                    <span>با ما در ارتباط باشید.</span>
+                    <div class="footer-icons-wrapper">
+                        <img src="/images/social media/Instagram_icon-icons.com_66804.svg" alt="">
+                        <img src="/images/social media/telegram_logo_icon_186899.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="overlay hidden"></div> 
+    <script src="/js/prescription.js"></script> 
+    <script src="/js/common.js"></script>
+</body>
+</html>
