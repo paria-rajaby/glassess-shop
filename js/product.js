@@ -40,7 +40,7 @@ const showSelectedProduct = (product) => {
   }
 };
 const fetchData = async () => {
-  const response = await fetch("/data/products.json");
+  const response = await fetch("../data/products.json");
   const data = await response.json();
 
   selectedProduct = data.find((p) => p.id == productId);
@@ -56,8 +56,8 @@ const showRelatedProducts = (products) => {
       `
     <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" data-swiper-slide-index="0" style="width: 346.667px; margin-left: 40px;">
                     <div class="cover-new">
-                        <a href="/pages/product.html?id=${product.id}">
-                            <img src="${product.image}" alt="">
+                        <a href="../pages/product.html?id=${product.id}">
+                            <img src="../${product.image}" alt="">
                             <div class="new-prouducts-info">
                                 <div class="products-info-wrapper">
                                     <span>${product.title}</span>
@@ -128,11 +128,11 @@ const showUserBasket = () => {
         "beforeend",
         `
       <div class="middle-section-basket_product">
-                  <a href="/pages/product.html?id=${product.id}">
-                      <img src="${product.image}" alt="">
+                  <a href="../pages/product.html?id=${product.id}">
+                      <img src="../${product.image}" alt="">
                   </a>
                   <div class="middle-section-basket_info">
-                      <a href="/pages/product.html?id=${product.id}">${
+                      <a href="../pages/product.html?id=${product.id}">${
           product.title
         }</a>
                       <span>${product.price.toLocaleString()} تومان</span>
