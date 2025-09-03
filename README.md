@@ -6,6 +6,7 @@ Product data comes from a `JSON file` and app state (cart) is stored in `LocalSt
 No backend required.
 
 ## Demo
+Check out the live version of the project here: [View Site](https://paria-rajaby.github.io/glassess-shop/)
 
 ## Features
 
