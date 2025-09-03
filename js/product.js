@@ -33,7 +33,7 @@ let relatedProduct = [];
 
 const showSelectedProduct = (product) => {
   if (product) {
-    productImage.src = product.image;
+    productImage.src = `../${product.image}`;
     productName.textContent = product.title;
     productPrice.textContent = `${product.price.toLocaleString()} تومان`;
     inventory.textContent = `موجودی : ${product.inventory} عدد`;
@@ -57,7 +57,7 @@ const showRelatedProducts = (products) => {
     <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 4" data-swiper-slide-index="0" style="width: 346.667px; margin-left: 40px;">
                     <div class="cover-new">
                         <a href="../pages/product.html?id=${product.id}">
-                            <img src="../${product.image}" alt="">
+                            <img src="../${product.image}" alt="glasses">
                             <div class="new-prouducts-info">
                                 <div class="products-info-wrapper">
                                     <span>${product.title}</span>
@@ -129,7 +129,7 @@ const showUserBasket = () => {
         `
       <div class="middle-section-basket_product">
                   <a href="../pages/product.html?id=${product.id}">
-                      <img src="../${product.image}" alt="">
+                      <img src="../${product.image}" alt="glasses">
                   </a>
                   <div class="middle-section-basket_info">
                       <a href="../pages/product.html?id=${product.id}">${
